@@ -1,0 +1,8 @@
+*.log
+.idea
+.vscode
+.suo
+*.ntvs*
+*.njspoj
+*.sln
+*.sw?

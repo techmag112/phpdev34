@@ -1,25 +1,33 @@
-## Создание точки сохранения
+## Подключение внешнего репозитория
 
 [![К рубрикатору](./192px-Git-logo.svg.png)](../readme.md)
 
-Формат команды: **git commit -m *"название_точки"***
+Формат команды: **git remote add origin *https://github.com/имя_пепозитория.git***
 
-Название точки сохранения должно быть короткое, но осмысленное. 
+**Варианты подключения внешнего репозитория**
+### **1. С загрузкой файлов во внешний репозиторий.** 
+Последовательно вводятся следующие команды:
 
-Эта команда сохраняет в репозитории только те, файлы, которые предварительно добавлены [git add](add.md)!
+*[git init](init.md)*
 
-```bash
-git commit -m "add file test.txt"
-```
-Комментарий можно дополнить и исправить командой:
-```bash
-git commit --amend -m "add file test.txt and add.md"
-```
-Также можно сразу добавив все файлы и создать точку сохранения одной командой:
+*[git commit -m "first commit"](commit.md)*
 
-```bash
-git commit -a -m "add file test.txt"
-```
+*[git branch -M main](branch.md)*
+
+*git remote add origin https://github.com/имя_репозитория.git*
+
+*[git push -u origin main](push.md)*
+
+### **2. С выгрузкой файлов из внешнего репозитория.** 
+Последовательно вводятся следующие команды:
+
+*[git init](init.md)*
+
+*[git branch](branch.md)*
+
+*git remote add origin https://github.com/имя_репозитория.git*
+
+*[git pull origin main](push.md)*
 
 ---
 

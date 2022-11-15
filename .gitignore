@@ -1,4 +1,9 @@
+Training/
 *.log
+*.jar
+*.class
+*.zip
+*.rar
 .idea
 .vscode
 .suo

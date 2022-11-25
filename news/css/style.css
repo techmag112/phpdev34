@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #6f4e37;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    background: url('https://images.unsplash.com/photo-1666866382169-576ed6b1294f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1112&q=80') bottom no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    color: #c6be94;
+    font-size: 4rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.news {
+    background-color: #E0CFB1;
+    padding: 50px 0 32px;
+}
+
+article {
+    width: 768px;
+    margin: 0 auto 32px;
+    padding: 6px 15px;
+    border-bottom: 1px solid rbg(128, 128, 128);
+}
+
+article a {
+    color: #673D3F;
+    text-decoration: none;
+}
+
+article a:hover {
+    color: #B05459;  
+}
+
+article:nth-child(even) {
+    background-color: rgb(212, 211, 211);
+}
+
+article h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 5px;
+}
+
+article:nth-child(1) h2::before {
+    content: "New ";
+    color: red;
+}
+
+article:nth-child(2) h2::before {
+    content: "New ";
+    color: red;
+}
+
+.article-meta {
+    color: rbg(134, 142, 150);
+    margin-bottom: 5px;
+}
+
+article img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+footer {
+    padding-top: 20px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+footer .links {
+    margin-bottom: 50px;
+}
+
+footer a {
+    color: #9c9d9e;
+    padding: 0 25px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.copyright {
+    color: rbg(108, 117, 125);
+    font-family: 'Times New Roman', Times, serif;
+}
